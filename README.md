@@ -1,6 +1,6 @@
 # Home Cinema — Privacy Policy
 
-Last updated: 12 November 2026
+Last updated: 13 November 2026
 
 Home Cinema is a media browser and player available as a desktop app, an Android app and a Chrome extension. This policy describes what the Chrome extension stores and sends.
 
@@ -8,6 +8,7 @@ Home Cinema is a media browser and player available as a desktop app, an Android
 
 - Your settings, viewer profiles ("tickets"), favourites, watch progress and badges are stored in the browser's storage for the extension. Removing the extension removes them.
 - Nothing about your browsing in other tabs is read, recorded or sent. The extension has no content scripts and does not run inside other websites.
+- The extension's own requests are sent without cookies. The one exception is a catalogue site (hdss.art) that sets a session cookie of its own before it lists a film's players: your browser keeps that site's cookie and sends it back to that site only. The extension does not read it.
 
 ## Optional online profile
 
@@ -27,7 +28,8 @@ You can sign out of a device at any time. To have an online profile and all its 
 ## Third-party services the extension contacts
 
 - The Movie Database (TMDB) for film and series information and artwork.
-- The catalogue and video hosts that a film or channel is played from (Kweflix, FrenchStream, FrameXTV, the Internet Archive and their stream hosts), which receive your IP address as any website does when you load a video from it.
+- The catalogue and video hosts that a film or channel is played from (Kweflix, FrenchStream, FrameXTV, TopFlix, HDSS, Cuevana, Wiflix, Rezka, MovieFFM, the Internet Archive and their stream hosts), which receive your IP address as any website does when you load a page or a video from it. Each catalogue can be switched off in Settings.
+- Our own server function (hosted by Supabase) and GitHub, when a TV channel plays the commercials between films: the function hands your browser a short-lived link to the video file, which is hosted on GitHub. Both receive your IP address; nothing about you or your profile is sent with the request. The commercials can be switched off in Settings › TV.
 - YouTube (youtube-nocookie.com) when you play a trailer.
 - Google, only if you choose "Sign in with Google".
 
@@ -36,7 +38,7 @@ Each of these services has its own privacy policy.
 ## What we do not do
 
 - We do not sell or rent your data.
-- We do not use it for advertising, profiling or any purpose other than running the features described above.
+- We do not use it for advertising, profiling or any purpose other than running the features described above. The commercials shown on the TV channels are part of the retro television look: nobody pays for them and they are not chosen according to who is watching.
 - We do not transfer it to third parties, except the hosting provider that stores it on our behalf.
 
 ## Contact
